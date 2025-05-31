@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 file(GLOB SOURCES
     "*.cpp"
 )
-
+  
 # Include header files
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
