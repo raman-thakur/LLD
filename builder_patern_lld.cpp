@@ -74,8 +74,7 @@ public:
 
 int main()
 {
-    HTTPheader::Builder *builder = new HTTPheader::Builder("google.com");
-    HTTPheader* header = builder->setMethod("GET")
+    HTTPheader* header = (new HTTPheader::Builder("google.com"))->setMethod("GET")
                             ->addHeader("jwtKey","bhvebewfbehf")
                             ->addHeader("APIKey","21515asd12")
                             ->addTimeout(30)->build();
